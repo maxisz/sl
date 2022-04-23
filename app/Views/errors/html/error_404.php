@@ -1,84 +1,55 @@
-<!DOCTYPE html>
+
+	<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>404 Page Not Found</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/images/favicon.ico">
 
-	<style>
-		div.logo {
-			height: 200px;
-			width: 155px;
-			display: inline-block;
-			opacity: 0.08;
-			position: absolute;
-			top: 2rem;
-			left: 50%;
-			margin-left: -73px;
-		}
-		body {
-			height: 100%;
-			background: #fafafa;
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #777;
-			font-weight: 300;
-		}
-		h1 {
-			font-weight: lighter;
-			letter-spacing: 0.8;
-			font-size: 3rem;
-			margin-top: 0;
-			margin-bottom: 0;
-			color: #222;
-		}
-		.wrap {
-			max-width: 1024px;
-			margin: 5rem auto;
-			padding: 2rem;
-			background: #fff;
-			text-align: center;
-			border: 1px solid #efefef;
-			border-radius: 0.5rem;
-			position: relative;
-		}
-		pre {
-			white-space: normal;
-			margin-top: 1.5rem;
-		}
-		code {
-			background: #fafafa;
-			border: 1px solid #efefef;
-			padding: 0.5rem 1rem;
-			border-radius: 5px;
-			display: block;
-		}
-		p {
-			margin-top: 1.5rem;
-		}
-		.footer {
-			margin-top: 2rem;
-			border-top: 1px solid #efefef;
-			padding: 1em 2em 0 2em;
-			font-size: 85%;
-			color: #999;
-		}
-		a:active,
-		a:link,
-		a:visited {
-			color: #dd4814;
-		}
-	</style>
+    <title>EmployX - 404 Page not found </title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="/src/css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="/src/css/style.css">
+	<link rel="stylesheet" href="/src/css/skin_color.css">	
+
 </head>
-<body>
-	<div class="wrap">
-		<h1>404 - File Not Found</h1>
+<body class="hold-transition dark-skin theme-primary bg-img" style="background-image: url(/images/auth-bg/bg-17.png); background-position: bottom right;">
+	
+	<section class="error-page h-p100">
+		<div class="container h-p100">
+		  <div class="row h-p100 align-items-center justify-content-center text-center">
+			  <div class="col-lg-7 col-md-10 col-12">
+				  <div class="rounded10 p-50">
+					  <h1 class="fs-100">404</h1>
+					  <h1>Page Not Found !</h1>
+					  <h3 class="text-fade">looks like, page doesn't exist</h3>
+					  <div class="my-30"><a href="<?= base_url(); ?> " class="btn btn-primary">Back to dashboard</a></div>				  
 
-		<p>
-			<?php if (! empty($message) && $message !== '(null)') : ?>
-				<?= nl2br(esc($message)) ?>
-			<?php else : ?>
-				Sorry! Cannot seem to find the page you were looking for.
-			<?php endif ?>
-		</p>
-	</div>
+					  <form class="search-form mx-auto mt-30 w-p75">
+						<div class="input-group rounded5 overflow-h">
+						  <input type="text" name="search" class="form-control bg-gray-800" placeholder="Search">
+						  <button type="submit" name="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i></button>
+						</div>
+						<!-- /.input-group -->
+					  </form>
+				  </div>
+			  </div>				
+		  </div>
+		</div>
+	</section>
+
+
+	<!-- Vendor JS -->
+	<script src="/src/js/vendors.min.js"></script>
+	<script src="/src/js/pages/chat-popup.js"></script>
+    <script src="/assets/icons/feather-icons/feather.min.js"></script>	
+
+
 </body>
 </html>
