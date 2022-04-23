@@ -13,7 +13,7 @@ class Home extends BaseController
     public function Dashboard()
     {
         $data['title'] = 'Dashboard Page';
-        return view('welcome_message',$data);
+        return view('dashboard',$data);
     }
     public function users()
     {
